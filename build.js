@@ -32,6 +32,24 @@ async function convert(config) {
 
   warningsOnly.extends = [];
 
+  warningsOnly.plugins = [
+    'import',
+    'jsx-a11y',
+    'react',
+    'react-hooks',
+  ];
+
+  warningsOnly.settings = {
+    react: {
+      version: "detect",
+    },
+  };
+
+  warningsOnly.parserOptions = {
+    ecmaVersion: 2018,
+    sourceType: 'module',
+  };
+
   return warningsOnly;
 }
 
@@ -40,7 +58,7 @@ async function convert(config) {
 
   await fs.writeFile(
     path.join(__dirname, 'index.js'),
-    `export default ${JSON.stringify(config, null, 2)}`,
+    `module.exports = ${JSON.stringify(config, null, 2)}`,
   );
 })().catch(error => {
   setTimeout(() => {

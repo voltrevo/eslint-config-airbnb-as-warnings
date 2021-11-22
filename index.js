@@ -1,4 +1,4 @@
-export default {
+module.exports = {
   "extends": [],
   "rules": {
     "jsx-a11y/accessible-emoji": [
@@ -420,9 +420,9 @@ export default {
         "sortShapeProp": true
       }
     ],
-    "react/jsx-sort-prop-types": [
-      "warn"
-    ],
+    // "react/jsx-sort-prop-types": [
+    //   "warn"
+    // ],
     "react/jsx-sort-props": [
       "warn",
       {
@@ -653,10 +653,10 @@ export default {
         "beforeClosing": "never"
       }
     ],
-    "react/jsx-space-before-closing": [
-      "warn",
-      "always"
-    ],
+    // "react/jsx-space-before-closing": [
+    //   "warn",
+    //   "always"
+    // ],
     "react/no-array-index-key": [
       "warn"
     ],
@@ -687,17 +687,17 @@ export default {
     "react/no-unused-state": [
       "warn"
     ],
-    "react/boolean-prop-naming": [
-      "warn",
-      {
-        "propTypeNames": [
-          "bool",
-          "mutuallyExclusiveTrueProps"
-        ],
-        "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
-        "message": ""
-      }
-    ],
+    // "react/boolean-prop-naming": [
+    //   "warn",
+    //   {
+    //     "propTypeNames": [
+    //       "bool",
+    //       "mutuallyExclusiveTrueProps"
+    //     ],
+    //     "rule": "^(is|has)[A-Z]([A-Za-z0-9]?)+",
+    //     "message": ""
+    //   }
+    // ],
     "react/no-typos": [
       "warn"
     ],
@@ -1023,7 +1023,7 @@ export default {
     "import/no-unused-modules": [
       "warn",
       {
-        "ignoreExports": [],
+        // "ignoreExports": [],
         "missingExports": true,
         "unusedExports": true
       }
@@ -2557,5 +2557,20 @@ export default {
     "yoda": [
       "warn"
     ]
+  },
+  "plugins": [
+    "import",
+    "jsx-a11y",
+    "react",
+    "react-hooks"
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "parserOptions": {
+    "ecmaVersion": 2018,
+    "sourceType": "module"
   }
 }
