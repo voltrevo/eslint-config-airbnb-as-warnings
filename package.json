@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-airbnb-as-warnings",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "The airbnb eslint config with all errors downgraded to warnings",
   "main": "index.js",
   "scripts": {
