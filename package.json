@@ -1,0 +1,28 @@
+{
+  "name": "eslint-config-airbnb-as-warnings",
+  "version": "0.0.0",
+  "description": "The airbnb eslint config with all errors downgraded to warnings",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/voltrevo/eslint-config-airbnb-as-warnings.git"
+  },
+  "keywords": [
+    "eslint",
+    "airbnb",
+    "warn",
+    "warning"
+  ],
+  "author": "Andrew morris",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/voltrevo/eslint-config-airbnb-as-warnings/issues"
+  },
+  "homepage": "https://github.com/voltrevo/eslint-config-airbnb-as-warnings#readme",
+  "devDependencies": {
+    "eslint-config-airbnb": "^19.0.0"
+  }
+}
